@@ -1,0 +1,23 @@
+.row {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+:focus {
+	outline: none;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 30px;
+  background-color: #b2b2b2;
+}
+
+.footer > .container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
