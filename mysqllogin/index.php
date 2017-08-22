@@ -8,6 +8,20 @@
 	<script src="/js/jquery-3.2.1.min.js"></script>
 	<script src="/js/bootstrap.js"></script>
 	<script src="myjs.js"></script>
+	<style>
+		html {
+			position: relative;
+			min-height: 100%;
+		}
+		
+		.footer {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 30px;
+			background-color: #f5f5f5;
+		}
+	</style>
 </head>
   
 <body style="background-color: #c0c0c0;">
@@ -17,6 +31,8 @@
 	<div class="container-fluid">
 		<div class="col-md-6">
 			<div id="wellcon" class="well well-lg">
+				
+				<!-- Content -->
 				<h2>MySQL Login</h2>
 				
 				<div id="alert" class="hidden alert alert-danger">
@@ -27,7 +43,7 @@
 					<div class="form-group">
 						<label class="col-md-2 control-label" for="namebox">Username: </label>
 						<div class="col-md-10">
-							<input type="text" id="namebox" class="form-control"  autocomplete="off">					
+							<input type="text" style="z-index:1!important" id="namebox" class="form-control"  autocomplete="off">					
 						</div>
 					</div>
 					
@@ -40,11 +56,13 @@
 					
 					<div class="form-group">
 						<div class="col-md-2">
-							<button class="form-control btn btn-primary" onclick="baloo()" id="subbtn">Login</button>
+							<button class="form-control btn btn-primary" onclick="baloo();" id="subbtn">Login</button>
 						</div>
 					</div>
 					
 				</div>
+				
+				<!-- /Content -->
 			</div>
 		</div>
 		
